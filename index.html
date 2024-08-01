@@ -49,6 +49,7 @@
                     }
             }
         }
+
         function MM_swapImgRestore() { //v3.0
             var i, x, a = document.MM_sr;
             for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
@@ -80,6 +81,48 @@
         }
     </script>
     <link href="css/thickbox.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            margin: 0;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .dropdown > a {
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .dropdown-content li {
+            display: block;
+            text-indent:10px;
+            padding: 2px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            display: block;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .dropdown-content a:hover {
+            color: #ddaa44;
+        }
+    </style>
 </head>
 
 <body onload="MM_preloadImages('images/PonyBarhats.jpg')">
@@ -94,6 +137,14 @@
         </ul>
 
         <h1>Home of the famous Butch Burger <!-- end .sidebar1 --> </h1>
+
+        <div class="dropdown">
+            <h1>Cities</h1>
+            <ul class="dropdown-content">
+                <li><a>Ha Noi</a></li>
+                <li><a>TP.Ho Chi Minh</a></li>
+            </ul>
+        </div>
     </div>
     <div class="content">
         <h1> The Pony Bar<br/>
@@ -380,6 +431,55 @@
             Cash gladly accepted<br/>
             ATM available
         </p>
+
+        <div style="margin-top: 80px">
+            <section style="margin-top:20px; border-radius: 15px; padding: 10px">
+                <h2 style="color: #2E8B57; font-weight: bolder; font-size: 18px">Bài viết mới nhất</h2>
+                <ul class="list-articles" style="list-style: none; padding: 0; font-size: 15px">
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/tong-hop-16-quan-nhau-tai-phuong-4-quan-10.p664">
+                            Tổng hợp 16 quán nhậu tại Phường 4 Quận 10
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/tong-hop-11-quan-tra-sua-tai-phuong-4-quan-10.p663">
+                            Tổng hợp 11 quán trà sữa tại Phường 4 Quận 10
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/top-17-quan-cafe-tai-phuong-15-quan-4.p662">
+                            Top 17 quán cafe tại Phường 15 Quận 4
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/top-11-quan-nhau-tai-phuong-8-quan-11.p661">
+                            Top 11 quán nhậu tại Phường 8 Quận 11
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/danh-sach-10-quan-an-sang-tai-phuong-5-quan-6.p660">
+                            Danh sách 10 quán ăn sáng tại Phường 5 Quận 6
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/danh-sach-13-quan-nhau-tai-phuong-5-quan-6.p659">
+                            Danh sách 13 quán nhậu tại Phường 5 Quận 6
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/danh-sach-14-quan-nhau-tai-phuong-6-quan-6.p658">
+                            Danh sách 14 quán nhậu tại Phường 6 Quận 6
+                        </a>
+                    </li>
+                    <li class="article-item">
+                        <a href="https://amthucbinhxuyen.com/post/top-15-quan-cafe-tai-phuong-5-quan-6.p657">
+                            Top 15 quán cafe tại Phường 5 Quận 6
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
     </div>
     <div class="sidebar2">
         <h1 class="sidebar2">Coming Up! </h1>
